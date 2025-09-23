@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Egyptian Fire Protection Platform Design System */
+
+@layer base {
+  :root {
+    /* الوضع الفاتح - ألوان محدثة */
+    --background: 4 30% 98%;
+    --foreground: 220 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 15%;
+
+    --primary: 4 85% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 4 85% 45%;
+
+    --secondary: 350 45% 22%;
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 5 85% 94%;
+    --accent-foreground: 350 45% 22%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 220 25% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --muted: 8 20% 94%;
+    --muted-foreground: 8 7% 40%;
+
+    --border: 8 16% 85%;
+    --input: 8 16% 92%;
+    --ring: 4 85% 55%;
+
+    /* التدرجات والخلفيات */
+    --gradient-primary: linear-gradient(135deg, hsl(4 85% 55%), hsl(350 70% 45%));
+    --gradient-secondary: linear-gradient(135deg, hsl(350 45% 22%), hsl(350 45% 28%));
+    --gradient-hero: linear-gradient(135deg, hsl(4 85% 55%) 0%, hsl(350 45% 22%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(4 30% 98%) 100%);
+    --text-gradient: linear-gradient(135deg, hsl(4 85% 55%) 0%, hsl(350 45% 22%) 100%);
+
+    /* الظلال */
+    --shadow-primary: 0 10px 30px -10px hsl(4 85% 55% / 0.35);
+    --shadow-secondary: 0 10px 30px -10px hsl(350 45% 22% / 0.25);
+    --shadow-elegant: 0 20px 40px -15px hsl(4 85% 55% / 0.28);
+    
+    /* الشريط الجانبي */
+    --sidebar-background: 4 30% 98%;
+    --sidebar-foreground: 350 45% 22%;
+    --sidebar-primary: 350 45% 22%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 5 85% 96%;
+    --sidebar-accent-foreground: 350 45% 22%;
+    --sidebar-border: 8 16% 85%;
+    --sidebar-ring: 4 85% 55%;
+
+    /* الرسوم المتحركة */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* الوضع الداكن - ألوان محدثة */
+    --background: 350 22% 10%;
+    --foreground: 0 0% 95%;
+
+    --card: 350 22% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 350 22% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 4 85% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 4 85% 60%;
+
+    --secondary: 350 45% 18%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 350 22% 14%;
+    --muted-foreground: 350 10% 62%;
+
+    --accent: 350 45% 20%;
+    --accent-foreground: 0 0% 95%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 220 25% 15%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 350 22% 20%;
+    --input: 350 22% 20%;
+    --ring: 4 85% 55%;
+
+    --sidebar-background: 350 22% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 350 45% 18%;
+    --sidebar-primary-foreground: 0 0% 95%;
+    --sidebar-accent: 350 45% 20%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 350 22% 20%;
+    --sidebar-ring: 4 85% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    direction: rtl;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .bg-gradient-secondary {
+    background: var(--gradient-secondary);
+  }
+
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-gradient-subtle {
+    background: var(--gradient-subtle);
+  }
+
+  .shadow-primary {
+    box-shadow: var(--shadow-primary);
+  }
+
+  .shadow-secondary {
+    box-shadow: var(--shadow-secondary);
+  }
+
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.6s ease-out;
+  }
+
+  .animate-pulse-gentle {
+    animation: pulse-gentle 2s ease-in-out infinite;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-gentle {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}

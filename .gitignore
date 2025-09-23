@@ -1,0 +1,49 @@
+# Logs 
+logs/ 
+*.log 
+npm-debug.log* 
+yarn-debug.log* 
+yarn-error.log* 
+pnpm-debug.log* 
+lerna-debug.log* 
+ECHO is on.
+# Node / Vite / build 
+node_modules/ 
+dist/ 
+.vite/ 
+*.local 
+vite.svg 
+ECHO is on.
+# Env 
+.env* 
+!.env.example 
+ECHO is on.
+# Editor 
+.DS_Store 
+Thumbs.db 
+.idea/ 
+.vscode/* 
+!.vscode/extensions.json 
+!.vscode/settings.json 
+ECHO is on.
+# OS 
+*.swp 
+ECHO is on.
+# Misc 
+coverage/ 
+.eslintcache 
+*.tsbuildinfo 
+*.pid 
+*.seed 
+*.tgz 
+*.orig 
+.turbo/ 
+.parcel-cache/ 
+.cache/ 
+.next/ 
+out/ 
+storybook-static/ 
+coverage-final.json 
+.npmrc 
+.pnpm-store/ 
+.env.local
