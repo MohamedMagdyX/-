@@ -1,55 +1,50 @@
-# Safe Egypt AI
-
-## نظرة عامة على المشروع
-
-## How can I edit this code?
-
-Use your preferred IDE locally. The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Use any preferred hosting for Vite apps (e.g., Vercel, Netlify, Cloudflare Pages). Build with `npm run build` and deploy the contents of `dist/`.
-
-## Custom domains
-
-Configure your host's domain settings per its documentation.
+# 🧠🔥 الذكاء الاصطناعي لحماية المنشآت من أخطار الحريق
+ 
+## 📌 نبذة عن المشروع
+مشروع يهدف إلى تعزيز دور **الذكاء الاصطناعي** في حماية المنشآت المصرية من الحرائق عبر **منصة تراخيص إلكترونية ذكية** مرتبطة بالكود المصري للبناء، مع دعم مرحلة ما بعد التشغيل بأنظمة استشعار مبكر (حرارة، دخان، غازات) مرتبطة بـ **GIS** للتنبؤ بالخطر وإرسال إنذارات استباقية للحماية المدنية.  
+المشروع يعزز التحول الرقمي والتنمية الحضرية المستدامة ضمن **رؤية مصر 2030**.
+ 
+---
+ 
+## 🎯 الأهداف
+- تسريع إصدار تراخيص المباني وخفض التكاليف.  
+- رفع مستوى أمان المباني ضد أخطار الحريق.  
+- تقليل التدخلات البشرية وتعزيز الشفافية.  
+- تمكين الحماية المدنية من التدخل المبكر وإنقاذ الأرواح.  
+- دعم بيئة استثمارية آمنة ومستدامة.  
+ 
+---
+ 
+## ⚙️ التقنيات المستخدمة
+- **AI & ML**: مطابقة التصميمات مع الكود المصري والتنبؤ بالمخاطر.  
+- **BIM Integration**: تحليل النماذج ثلاثية الأبعاد.  
+- **IoT Sensors**: للكشف المبكر عن الحرائق والغازات.  
+- **GIS & Cloud**: خرائط ذكية وتحديد مواقع الإنذار بدقة.  
+- **Web Platform**: React.js, Node.js مع Dashboard تفاعلي.  
+- **Firebase**: تسجيل دخول آمن متعدد الصلاحيات.  
+- **SQL Database**: لتخزين وإدارة البيانات.  
+ 
+---
+ 
+## 🚀 مراحل التنفيذ
+1. **Phase 1**: نمذجة الكود المصري + محرك مراجعة التصميمات + تقارير ذكية.  
+2. **Phase 2**: إطلاق تجريبي وربط بالبوابة الموحدة للتراخيص.  
+3. **Phase 3**: أنظمة إنذار مبكر عبر IoT + AI + GIS.  
+ 
+---
+ 
+## 👥 فريق العمل – مستدامون
+- محمد مجدي محمد *(قائد الفريق)*  
+- محمد هشام غرابة  
+- باهر صلاح الدين  
+- فاطمة حسام عبد اللطيف  
+ 
+---
+ 
+## 🎥 فيديو توضيحي
+[اضغط هنا لمشاهدة الفيديو](https://drive.google.com/file/d/1yktHhifRX9Bdyzv-qEQYniEv-fWn4Sfh/view?usp=sharing)
+ 
+---
+ 
+## 📌 الملخص (Short Description)
+نظام بالذكاء الاصطناعي لحماية المنشآت من الحرائق عبر تراخيص إلكترونية ذكية، مراجعة التصميمات وفق الكود المصري، واستشعار مبكر باستخدام حساسات وإنذارات مرتبطة بـ GIS للتنبؤ بالخطر، مما يعزز التنمية الحضرية المستدامة ضمن رؤية مصر 2030.
