@@ -1,0 +1,57 @@
+# معالجة الصور والرؤية الحاسوبية
+opencv-python==4.6.0.66
+Pillow==10.0.1
+scikit-image==0.21.0
+imageio==2.31.5
+
+# OCR واستخراج النصوص
+pytesseract==0.3.10
+easyocr==1.7.0
+paddleocr==2.7.0.3
+
+# التعلم العميق وAI
+torch==2.1.0
+torchvision==0.16.0
+transformers==4.35.2
+ultralytics==8.0.200
+git+https://github.com/facebookresearch/detectron2.git
+git+https://github.com/facebookresearch/segment-anything.git
+
+# معالجة البيانات
+numpy==1.24.3
+pandas==2.1.3
+scipy==1.11.4
+
+# الرسوم البيانية والتحليل
+networkx==3.2.1
+shapely==2.0.2
+matplotlib==3.8.1
+seaborn==0.13.0
+
+# API والويب
+fastapi==0.104.1
+uvicorn==0.24.0
+pydantic==2.5.0
+requests==2.31.0
+aiofiles==23.2.1
+
+# قواعد البيانات
+sqlalchemy==2.0.23
+psycopg2-binary==2.9.9
+redis==5.0.1
+
+# أدوات المساعدة
+python-multipart==0.0.6
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-dotenv==1.0.0
+
+# اختبارات وتطوير
+pytest==7.4.3
+pytest-asyncio==0.21.1
+black==23.11.0
+flake8==6.1.0
+
+# أدوات إضافية
+tqdm==4.66.1
+loguru==0.7.2
